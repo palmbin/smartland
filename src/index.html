@@ -1,25 +1,256 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>!!!SMARTLand!!!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <title>SMARTLAND</title>    
 </head>
-
 <body>
-  <main>
-    <h1>SMARTLand - Kids English!</h1>
-    <p>Loading content from the API: <b id="name">...</b></p>
-  </main>
+  <!--
+  <div id=”banner” style="text-align:center">
+    <a href="form1.html" style="position:fixed; margin-top:800px">
+      <img src="imgs/btn_pica.png" style="width:500px">
+    </a>
+  </div>
+  -->
 
-  <script>
-    (async function() {
-        const { text } = await( await fetch(`/api/message`)).json();
-        document.querySelector('#name').textContent = text;
-    }());
-    </script>
+  <div id="wrap" style="text-align:center">
+    <div id="quick_bg">
+      <div id="quick">
+        <a href="form1.html" style="position:fixed;margin-top:800px; left:850px">
+          <img src="imgs/btn_pica.png" style="width:450px">
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-video">
+    <video class="bg-video__content" controls autoplay loop>
+    <!-- <video class="bg-video__content" autoplay muted loop> -->
+      <source src="imgs/video.mp4" type="video/mp4" />
+      <source src="imgs/video.webm" type="video/webm" />
+      Your browser is not supported!
+    </video>
+    <!-- <button id="unmutePlayerButton" onclick="unmute()">unmute</button>     -->
+  </div>
+  
+  <br><br>
+  <div style="text-align:center">
+    <img src = "/imgs/slandlogo_25p.png" />
+  </div>
+  <!--  
+  <div style="text-align:center">
+    <img src = "/imgs/mainKids15s.gif" />
+  </div>
+  -->
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+
+  <div style="text-align:center">
+    <img src = "/imgs/mainKids15s.gif" />
+  </div>
+
+  <div style="text-align:center">
+    <img src="imgs/text001.png"/>  
+  </div>
+
+  <div style="text-align:center">
+    <img src="imgs/text003.png"/>  
+  </div>
+
+<br>
+<br>
+<br>
+
+<div style="text-align:center">
+  <img src="imgs/cq_intro_text8.png"/>
+</div>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="imgs/cq1.jpg" style="width:100%">
+      <div class="text">사운드 펀</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="imgs/cq2.jpg" style="width:100%">
+      <div class="text">스마트랜드1</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="imgs/cq3.jpg" style="width:100%">
+      <div class="text">스마트랜드2</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="imgs/cq4.jpg" style="width:100%">
+        <div class="text">파닉스 펀</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="imgs/cq5.jpg" style="width:100%">
+        <div class="text">스마트랜드3</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="imgs/cq6.jpg" style="width:100%">
+        <div class="text">스토리 펀</div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+<br>
+<br>
+<br>
+
+<div style="text-align:center">
+  <img src="imgs/text005.png"/>
+</div>
+
+  <br>
+  <br>
+  <br>
+
+<div style="text-align:center">
+  <img src="imgs/merit_intro_text1.png"/>   
+</div>
+
+<!-- Slideshow container 2 -->
+<div class="slideshow-container2">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides2 fade">
+      <div class="numbertext2">1 / 4</div>
+      <img src="imgs/merit1.jpg" style="width:100%">
+      <div class="text2">스토리북</div>
+    </div>
+  
+    <div class="mySlides2 fade">
+      <div class="numbertext2">2 / 4</div>
+      <img src="imgs/merit2.jpg" style="width:100%">
+      <div class="text2">유니패드</div>
+    </div>
+  
+    <div class="mySlides2 fade">
+      <div class="numbertext2">3 / 4</div>
+      <img src="imgs/merit3.jpg" style="width:100%">
+      <div class="text2">발화교구</div>
+    </div>
+
+    <div class="mySlides2 fade">
+        <div class="numbertext2">4 / 4</div>
+        <img src="imgs/merit4.jpg" style="width:100%">
+        <div class="text2">세이펜 뮤직세트</div>
+    </div> 
+  
+    <!-- Next and previous buttons -->
+    <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+    <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot2" onclick="currentSlide2(1)"></span>
+    <span class="dot2" onclick="currentSlide2(2)"></span>
+    <span class="dot2" onclick="currentSlide2(3)"></span>
+    <span class="dot2" onclick="currentSlide2(4)"></span>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div style="text-align:center">
+    <img src="imgs/bg-sl-art2.png"/>
+  </div>
+  
+  <!-- <img src="imgs/bg-white02.png"/> -->
+  <!-- <img src="imgs/bgbl_white.png"/> -->
+
+    <div style="text-align:center">
+      <img src="imgs/kids_poto1.jpg"/>
+      <img src="imgs/kids_poto2.jpg"/>
+    </div>
+
+    <div style="text-align:center">
+      <img src="imgs/kids_poto3.jpg"/>
+      <img src="imgs/kids_poto4.jpg"/>
+    </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="bottom_banner_wrap open">
+    <!-- <script type="text/javascript" src="js/scroll.js"></script>   -->
+    <!--
+    <a href="form1.html" class"apply_banner scroll_move">
+      <p>
+        <span style="--i:5">체</span>
+        <span style="--i:5">험</span>
+        <span style="--i:5">신</span>
+        <span style="--i:5">청</span>
+        <span style="--i:5">하</span>
+        <span style="--i:5">기</span>
+      </p>
+    </a>
+  -->
+    <a href="index.html" class="top_q">
+      <span class="xi-arrow-up">
+        UP!
+      </span>
+    </a>  
+  </div>  
+  
+  <!--풋터-->
+  <footer style="background-color: darkgray;">
+    <br>
+    <p> &nbsp; &nbsp; 서울특별시 강동구 강동대로 207 (강동구 성내동 448-11) (주)유니버스에듀케이션 대표이사 김태영</p>
+    <p> &nbsp; &nbsp; 사업자등록번호: 212-81-84844</p>
+    <p> &nbsp; &nbsp; COPYRIGHT YOONIVERS EDUCATION. ALL RIGHTS RESERVED.</p>
+    <br>
+  </footer>
+  
+  <script type="text/javascript" src="js/showSlides.js"></script>
+  <!-- <script type="text/javascript" src="js/scroll.js"></script>  -->
+  <!-- <script>
+    function unmute() {
+      const player = document.getElementById("player");
+      player.muted = false;
+    }
+  </script> -->
 </body>
-
 </html>
