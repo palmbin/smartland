@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MEMBERSHIP</title>
+</head>
+<body>
+    <div id="wrap" style="text-align:center">
+        <div id="quick_bg">
+          <div id="quick">
+            <a href="index.html" style="position:fixed;margin-top:800px; left:850px">
+              <img src="imgs/go_home_btn_pica.png" style="width:450px">
+            </a>
+          </div>
+        </div>
+    </div>
+
+    <div style="text-align:center">
+        <img src = "/imgs/mainKids15s.gif" />
+    </div>  
+    
+    <form name="입력 양식" action="cal_list.php" method="post">
+        <!--
+        단가 : <input type="text" name="price">
+        개수 : <input type="text" name="count">
+        <input type="submit" value="계산하기">
+        <P></P>
+        -->
+        학부모 이름 : <input type="text", placeholder="학부모 이름">
+        <P></P>
+        성별 :
+        <input type="radio", name="gender" value="남자"> 남자
+        <input type="radio", name="gender" value="여자"> 여자
+        <!--<input type="radio", name="gender" value="그 외"> 그 외 -->
+        <P></P>
+        학부모 연락처 : <input type="text", placeholder="학부모 연락처">
+        <P></P>
+
+        자녀 이름 : <input type="text", placeholder="자녀 이름">
+        <P></P>
+        성별 :
+        <input type="radio", name="gender" value="남자"> 남자
+        <input type="radio", name="gender" value="여자"> 여자
+        <P></P>
+        자녀 생년월: <input type="text", placeholder="자녀 생년월">
+        <P></P>
+
+        아이가 관심있어 하는 활동은 무엇인가요?: 
+        <input type="checkbox" name="action" value="한식" checked> 노래와 율동
+        <input type="checkbox" name="action" value="양식"> 장난감 놀이
+        <input type="checkbox" name="action" value="일식"> 센터 놀이체험
+        <input type="checkbox" name="action" value="중식"> 동화책 읽기
+        <input type="checkbox" name="action" value="그 외"> 그 외
+        <P></P>
+        아이가 경험한 프로그램:
+        <select name="english_experience">
+            <option value="Yes">있다</option>
+            <option value="No">없다</option>            
+        </select>
+        <p></p>
+
+        있다면 "프로그램 명"은 무엇인가요? : <input type="text", placeholder="프로그램 명">
+        <P></P>
+        <!--
+        <select name="bloodtype">
+            <option value="Yes">A</option>
+            <option value="B">B</option>
+            <option value="AB">AB</option>
+            <option value="O">O</option>
+        </select>
+        <p></p>
+        -->
+        주소 : <input type="text", placeholder="주소">
+        <P></P>
+        <textarea name="review" placeholder="리뷰를 입력해주세요!"></textarea>
+        <p></p>
+        전송 : <input type="submit" value="전송">
+    </form>
+    <!--
+    <div class="bottom_banner_wrap open">
+    -->
+        <!-- <script type="text/javascript" src="js/scroll.js"></script>   -->
+        <!--
+        <a href="form1.html" class"apply_banner scroll_move">
+          <p>
+            <span style="--i:5">체</span>
+            <span style="--i:5">험</span>
+            <span style="--i:5">신</span>
+            <span style="--i:5">청</span>
+            <span style="--i:5">하</span>
+            <span style="--i:5">기</span>
+          </p>
+        </a>
+      -->
+      <!--
+        <a href="index.html" class="top_q">
+          <span class="xi-arrow-up">
+            UP!
+          </span>
+        </a>  
+      </div>
+    -->
+    
+</body>
+</html>
